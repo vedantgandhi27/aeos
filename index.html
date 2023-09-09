@@ -20,6 +20,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+<script>
+    function func1()
+    {
+        document.getElementById("cheeseburger").classList.toggle("show");
+    }
+</script>
 </head>
 <body>
     <header>
@@ -43,16 +52,17 @@
             </div> -->
 
             <div class="lines">
-                <img src="hamburger.png" class="hamburger">
                 <div class="hidd_menu">
-                    <ul class="hidd_ul">
+                    <img src="hamburger.png" class="hamburger" id="hambutton" onclick="func1()">
+                    <ul class="hidd_ul" id="cheeseburger">
+                        <li class="tfont_hidd addi">AEOS PC'S ™</li>
                         <li class="tfont_hidd">»Pre Built PC's</li>
                         <li class="tfont_hidd">»Refurbished PC's</li>
                         <li class="tfont_hidd">»Built Your Own</li>
                         <li class="tfont_hidd">»Customize your PC</li>
-                      </ul>  
+                    </ul>  
                 </div>
-               
+                
             </div>
 
         </div>
