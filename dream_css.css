@@ -12,7 +12,7 @@ a {
 
 a:visited {
     text-decoration: none;
-    color: rgb(51, 51, 51);
+    /* color: rgb(51, 51, 51); */
 }
 
 
@@ -154,7 +154,9 @@ a:visited {
 
 
 .pro_res {
-    width: 260px;
+    /* width: 260px; */
+    max-width: 100%;
+    height: auto;
 }
 
 .desc_txt {
@@ -359,11 +361,15 @@ ul {
     color: #3DA35D;
 }
 
+.mailme
+{
+    color: white;
+}
 
 
 /* RESPONSIVNESS */
 
-@media screen and (min-width: 320px) and (max-width : 768.9px) {
+@media screen and (min-width: 120px) and (max-width : 768.9px) {
     .con_us {
         display: none;
     }
@@ -382,7 +388,7 @@ ul {
         justify-content: center;
         height: 5rem;
         justify-content: space-between;
-        padding-left: 23%;
+        padding-left: 5%;
 
     }
 
@@ -466,10 +472,7 @@ ul {
 
     }
 
-    .list21 {
-        border-bottom: 0px solid blue;
-
-    }
+    
 
     .para {
         padding: 1rem;
