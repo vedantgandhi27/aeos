@@ -45,6 +45,87 @@
             window.location.href = "https://opsys.co.uk/configurator";
         }
 
+        // new func
+
+        function func_1() {
+            const hideElement = document.getElementById("hide");
+
+            if (hideElement.style.display === "none" || hideElement.style.display === "") {
+                hideElement.style.display = "flex";
+            } else {
+                hideElement.style.display = "none";
+            }
+        }
+        function func_2() {
+            const hideElement = document.getElementById("mb_hide");
+
+            if (hideElement.style.display === "none" || hideElement.style.display === "") {
+                hideElement.style.display = "flex";
+            } else {
+                hideElement.style.display = "none";
+            }
+        }
+        function func_3() {
+            const hideElement = document.getElementById("ram_hide");
+
+            if (hideElement.style.display === "none" || hideElement.style.display === "") {
+                hideElement.style.display = "flex";
+            } else {
+                hideElement.style.display = "none";
+            }
+        }
+        function func_4() {
+            const hideElement = document.getElementById("graphic_hide");
+
+            if (hideElement.style.display === "none" || hideElement.style.display === "") {
+                hideElement.style.display = "flex";
+            } else {
+                hideElement.style.display = "none";
+            }
+        }
+        function func_5() {
+            const hideElement = document.getElementById("storage_hide");
+
+            if (hideElement.style.display === "none" || hideElement.style.display === "") {
+                hideElement.style.display = "flex";
+            } else {
+                hideElement.style.display = "none";
+            }
+        }
+        function intel() {
+            const hideElement = document.getElementById("intel_id");
+
+            if (hideElement.style.display === "none" || hideElement.style.display === "") {
+                hideElement.style.display = "block";
+            } else {
+                hideElement.style.display = "none";
+            }
+
+            var amdDiv = document.getElementById("amd_parent");
+            if (amdDiv.style.display === "none") {
+                amdDiv.style.display = "block"; // Show the division
+            } else {
+                amdDiv.style.display = "none"; // Hide the division
+            }
+        }
+        function amd() {
+            const hideElement = document.getElementById("amd_id");
+
+            if (hideElement.style.display === "none" || hideElement.style.display === "") {
+                hideElement.style.display = "block";
+            } else {
+                hideElement.style.display = "none";
+            }
+
+            var amdDiv = document.getElementById("intel_parent");
+            if (amdDiv.style.display === "none") {
+                amdDiv.style.display = "block"; // Show the division
+            } else {
+                amdDiv.style.display = "none"; // Hide the division
+            }
+        }
+
+
     </script>
 
 </head>
@@ -87,9 +168,100 @@
     </header>
 
     <body>
+        <div class="mn_div">
+            <!--            Main Content-->
+            <div class="processor" onclick="func_1()">
+                Select Processor
+            </div>
+            <div class="pro_opt" id="hide">
+                <div class="sel_pro">
+                    <!-- if user clicks on intel -->
+                    <div class="intel" onclick="intel()" id="intel_parent"> 
+                       <span class="proc_title">
+                           INTEL Processors
 
+                       </span> 
+                        <span>
+                            <img src="intel_edit.jpg" class="proc_img" alt="">
+                        </span>
+                    </div>
+                    <div class="intel_hidd" id="intel_id">
+                        <div class="pro_list">
+                            <div class="pro_divlist">INTEL 10TH GEN COMET LAKE CORE I5-10400F PROCESSOR</div>
+                            <div class="pro_divlist">Intel Core I3-10100 10Th Generation Processor (6M Cache, Up To 4.30 Ghz) (BX8070110100)
+                                INTEL CORE I3-10100 10TH GENERATION PROCESSOR (6M CACHE, UP TO 4.30 GHZ) (BX8070110100)</div>
+                            <div class="pro_divlist">INTEL CORE I3-10100F PROCESSOR (BX8070110100F)₹11,000.00 ₹6</div>
+                            <div class="pro_divlist">INTEL CORE I5-12600K 12TH GEN ALDER LAKE PROCESSOR (BX8071512600K)</div>
+                            <div class="pro_divlist">INTEL CORE I5-13500 DESKTOP PROCESSOR (BX8071513500)</div>
+                            <div class="pro_divlist">
+                                INTEL CORE I5-13600K DESKTOP PROCESSOR (24M CACHE, UP TO 5.10 GHZ) (I5-13600K)</div>
+                            <div class="pro_divlist">Intel Core I7-13700 Desktop Processor (BX8071513700)
+                                INTEL CORE I7-13700 DESKTOP PROCESSOR (BX8071513700)</div>
+                            <div class="pro_divlist">INTEL CORE I7-13700F DESKTOP PROCESSOR (BX8071513700F)</div>
+                            <div class="pro_divlist">INTEL CORE I7-13700K DESKTOP PROCESSOR (30M CACHE, UP TO 5.40 GHZ) (I7-13700K)</div>
+                            <div class="pro_divlist">
+                                INTEL CORE I9-13900KS DESKTOP PROCESSOR₹116,450.00</div>
+                        </div>
+                    </div>
+                    <!-- IF user clicks on amd -->
+                    <div class="amd"  onclick="amd()" id="amd_parent">
+                        <span class="proc_title">
+                         RYZEN Processors
+                        </span>
+                        <img src="amd_edit.jpg" class="proc_img" alt="">
+                    </div>
+                    <div class="amd_hidd" id="amd_id">
+                        <div class="pro_list">
+                            <div class="pro_divlist">AMD RYZEN 5 7600 GAMING DESKTOP PROCESSOR (100-100001015BOX)</div>
+                            <div class="pro_divlist">AMD RYZEN 5 7600X DESKTOP PROCESSOR (UP TO 5.3 GHZ) (100-100000593WOF)</div>
+                            <div class="pro_divlist">AMD RYZEN 7 7700 GAMING DESKTOP PROCESSOR (100-100000592BOX)</div>
+                            <div class="pro_divlist">
+                                AMD RYZEN 9 7900X DESKTOP PROCESSOR (UP TO 5.6 GHZ) (100-100000589WOF)</div>
+                            <div class="pro_divlist">
+                                Amd Ryzen 9 7900X3D Gaming Processor (100-100000909WOF)Amd Ryzen 9 7900X3D Gaming Processor (100-100000909WOF)
+                                AMD RYZEN 9 7900X3D GAMING PROCESSOR (100-100000909WOF)</div>
+                            <div class="pro_divlist">
+                                AMD RYZEN 9 7950X DESKTOP PROCESSOR (UP TO 5.7 GHZ) (100-100000514WOF)</div>
+                            <div class="pro_divlist">Amd Ryzen 9 7950X3D Gaming Processor (100-100000908WOF)Amd Ryzen 9 7950X3D Gaming Processor (100-100000908WOF)
+                                AMD RYZEN 9 7950X3D GAMING PROCESSOR (100-100000908WOF)</div>
+                            <div class="pro_divlist">amd ryzen 3 3200gamd ryzen 3 3200g
+                                AMD RYZEN 3 3200G WITH RADEON RX VEGA 8 GRAPHICS PROCESSOR ( UPTO 4.0 GHZ / 6 MB CACHE)</div>
+                            <div class="pro_divlist">
+                                AMD RYZEN THREADRIPPER PRO 5975WX PROCESSOR₹370,199.00 ₹323,900.</div>
+                            <div class="pro_divlist">
+                                AMD RYZEN THREADRIPPER PRO 5995WX PROCESSOR₹757,299.00 ₹656,900.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="motherboard" onclick="func_2()">
+                Choose Motherboard
+            </div>
+            <div class="mb_opt" id="mb_hide">
+              motherboard options 
+            </div>
+            <div class="ram" onclick="func_3()">
+                Choose Ram
+            </div>
+            <div class="ram_opt" id="ram_hide">
+                ram options
+            </div>
+            <div class="graphic_card" onclick="func_4()">
+                Choose Graphic Card
+            </div>
+            <div class="graphic_opt" id="graphic_hide">
+                Graphic Card Options
+            </div>
+            <div class="storage" onclick="func_5()">
+                Choose Storage
+            </div>
+            <div class="storage_opt" id="storage_hide">
+                Storage Options
+            </div>
+            <div class="pricing">
 
-
+            </div>
+        </div>
     </body>
     <footer>
         <!-- footer -->

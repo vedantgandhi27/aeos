@@ -206,6 +206,107 @@ ul {
     list-style-type: none;
 }
 
+/* New page starts from here */
+
+.processor,.motherboard,.ram,.graphic_card,.storage
+{
+    background-color: antiquewhite;
+    max-width: 50%;
+    height: 3rem;
+    padding: 1rem;
+    text-align: start;
+    cursor: pointer;
+}
+
+
+
+.pro_opt,.mb_opt,.ram_opt,.graphic_opt,.storage_opt {
+    display: none;
+    position: fixed; /* Change from absolute to fixed for centering in viewport */
+    top: 50%; /* Move the element 50% from the top */
+    left: 50%; /* Move the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    z-index: 200;
+    background-color: #ffffff;
+    height: 80%;
+    width: 65%;
+    box-shadow: 15px 9px 13px 5px #000000;
+}
+.sel_pro
+{
+    border: 1px black solid;
+    display: flex;
+    width: 100%;
+}
+
+.intel,.amd
+{
+    background-color: #00ccff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.proc_title
+{
+    padding-bottom: 5rem;
+}
+
+.proc_img
+{
+    /* max-width: 5rem; */
+    max-width: 100%;
+    height: auto;
+    box-shadow: 7px 7px 11px 3px #000000;    /* padding: 5rem; */
+}
+
+.proc_img:hover
+{
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+
+.amd
+{
+    background-color: #3DA35D;
+
+}
+.intel_hidd
+{
+    display: none;
+}
+
+.amd_hidd
+{
+    display: none;
+}
+
+.pro_list
+{
+    width: inherit;
+    height: 100%;
+    padding: 3rem;
+    border: 1px solid black;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+.pro_divlist
+{
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.pro_divlist:hover
+{
+    background-color: #888888;
+}
+
 /* RESPONSIVNESS */
 
 
@@ -281,6 +382,7 @@ ul {
         flex-direction: column;
         text-align: center;
         justify-content: flex-start;
+        z-index: -1;
 
     }
 }
